@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff227bad" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="10.0dip"
+            android:orientation="horizontal" >
+
+            <ImageView
+                style="@style/ImageIconPC"
+                android:src="@drawable/icon" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:text="My Account"
+                android:textColor="#ffffffff"
+                android:textSize="18.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/ItemHeading"
+                android:gravity="center"
+                android:text="Account Information" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="15.0dip" >
+
+                <TextView
+                    android:id="@+id/tvUserNameMyAccount"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10.0"
+                    android:background="@drawable/textview_layout"
+                    android:padding="5.0dip"
+                    android:text="UserName"
+                    android:textSize="18.0sp" />
+
+                <ImageButton
+                    android:id="@+id/ibEditUserName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="90.0"
+                    android:src="@drawable/edit" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="15.0dip" >
+
+                <TextView
+                    android:id="@+id/tvPhoneNumberMyAccount"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10.0"
+                    android:background="@drawable/textview_layout"
+                    android:padding="5.0dip"
+                    android:text="PhoneNumber"
+                    android:textSize="18.0sp" />
+
+                <ImageButton
+                    android:id="@+id/ibEditPhone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="90.0"
+                    android:src="@drawable/edit" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="15.0dip" >
+
+                <TextView
+                    android:id="@+id/tvEmailIDMyAccount"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10.0"
+                    android:background="@drawable/textview_layout"
+                    android:padding="5.0dip"
+                    android:text="Email ID"
+                    android:textSize="18.0sp" />
+
+                <ImageButton
+                    android:id="@+id/ibEditEmailID"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="90.0"
+                    android:src="@drawable/edit" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="15.0dip" >
+
+                <TextView
+                    android:id="@+id/tvAddressMyAccount"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10.0"
+                    android:background="@drawable/textview_layout"
+                    android:padding="5.0dip"
+                    android:text="Address"
+                    android:textSize="18.0sp" />
+
+                <ImageButton
+                    android:id="@+id/ibEditAddress"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="90.0"
+                    android:src="@drawable/edit" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/ItemHeading"
+                android:layout_marginTop="15.0dip"
+                android:gravity="center"
+                android:text="Account Settings" />
+
+            <Switch
+                android:id="@+id/swComplaintNotify"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7.0dip"
+                android:layout_marginTop="20.0dip"
+                android:text="Notify on New Complaint" />
+
+            <Switch
+                android:id="@+id/swQuestionNotify"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7.0dip"
+                android:layout_marginTop="20.0dip"
+                android:text="Notify on New Question" />
+
+            <Switch
+                android:id="@+id/swStatusNotify"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7.0dip"
+                android:layout_marginTop="20.0dip"
+                android:text="Notify on Change of Status" />
+
+            <Switch
+                android:id="@+id/swActionNotify"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7.0dip"
+                android:layout_marginTop="20.0dip"
+                android:text="Notify on Action Taken" />
+
+            <Button
+                android:id="@+id/bChangePasswordOfAccount"
+                style="@style/HomePageTitles"
+                android:layout_marginTop="15.0dip"
+                android:padding="5.0dip"
+                android:text="Change Password" />
+
+            <TextView
+                style="@style/ItemHeading"
+                android:layout_marginTop="15.0dip"
+                android:gravity="center"
+                android:text="History" />
+
+            <TextView
+                android:id="@+id/tvHistoryMyAccount"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="7.0dip" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

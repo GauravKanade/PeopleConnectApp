@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff6f6f6"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff227bad" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="10.0dip"
+            android:orientation="horizontal" >
+
+            <ImageView
+                style="@style/ImageIconPC"
+                android:src="@drawable/icon" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:text="Public Opinion"
+                android:textColor="#ffffffff"
+                android:textSize="18.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvPublicOpinionIdSingle"
+                style="@style/ItemHeading" />
+
+            <TextView
+                android:id="@+id/tvTitlePublicOpinionSingle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5.0dip"
+                android:background="@drawable/edittext_layout"
+                android:gravity="left"
+                android:padding="7.0dip"
+                android:text="Heading" />
+
+            <LinearLayout
+                android:id="@+id/llOptionsPublicQuestionsSingle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="7.0dip" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5.0dip"
+                android:background="@drawable/textview_layout"
+                android:orientation="vertical"
+                android:padding="7.0dip" >
+
+                <TextView
+                    android:id="@+id/tvSenderPublicQuestionSingle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="7.0dip"
+                    android:text="Sender" />
+
+                <TextView
+                    android:id="@+id/tvAreaPublicQuestionSingle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="7.0dip"
+                    android:text="Sender" />
+
+                <TextView
+                    android:id="@+id/tvSentOnPublicQuestionSingle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="7.0dip"
+                    android:text="Sent on" />
+
+                <TextView
+                    android:id="@+id/tvClosingDatePublicQuestionSingle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="7.0dip"
+                    android:text="Sent on" />
+
+                <TextView
+                    android:id="@+id/tvStatusPublicQuestionSingle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="7.0dip"
+                    android:text="Sent on"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

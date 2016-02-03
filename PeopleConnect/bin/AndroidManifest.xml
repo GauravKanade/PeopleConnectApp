@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.peopleconnect"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <permission
+        android:name="com.example.peopleconnect.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.peopleconnect.permission.C2D_MESSAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.peopleconnect.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.peopleconnect.HomePage"
+            android:label="@string/title_activity_home_page" >
+            <intent-filter>
+                <action android:name="com.example.peopleconnect.HomePage" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.peopleconnect.Complains"
+            android:label="@string/title_activity_home_page" >
+            <intent-filter>
+                <action android:name="com.example.peopleconnect.Complains" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.peopleconnect.ComplainSingle"
+            android:label="@string/title_activity_home_page" >
+            <intent-filter>
+                <action android:name="com.example.peopleconnect.ComplainSingle" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.peopleconnect.CreateComplaint"
+            android:label="@string/title_activity_home_page" >
+            <intent-filter>
+                <action android:name="com.example.peopleconnect.CreateComplaint" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.peopleconnect.CreateComplaint2"
+            android:label="@string/title_activity_home_page" >
+            <intent-filter>
+                <action android:name="com.example.peopleconnect.CreateComplaintPage2" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.peopleconnect.ErrorInConnection"
+            android:label="@string/title_activity_home_page" >
+            <intent-filter>
+                <action android:name="com.example.peopleconnect.ErrorInConnection" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.peopleconnect.PublicQuestionSingle"
+            android:label="@string/title_activity_home_page" >
+            <intent-filter>
+                <action android:name="com.example.peopleconnect.PublicQuestionSingle" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.peopleconnect.CreatePublicQuestion"
+            android:label="@string/title_activity_home_page" >
+            <intent-filter>
+                <action android:name="com.example.peopleconnect.CreatePublicQuestion" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.peopleconnect.PublicOpinionsTabs"
+            android:label="@string/title_activity_home_page" >
+            <intent-filter>
+                <action android:name="com.example.peopleconnect.PublicOpinionsTabs" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.peopleconnect.CreateUserPage1"
+            android:label="@string/title_activity_home_page" >
+            <intent-filter>
+                <action android:name="com.example.peopleconnect.CreateUserPage1" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.peopleconnect.CreateUserPage2"
+            android:label="@string/title_activity_home_page" >
+            <intent-filter>
+                <action android:name="com.example.peopleconnect.CreateUserPage2" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.peopleconnect.CreateUserPage3"
+            android:label="@string/title_activity_home_page" >
+            <intent-filter>
+                <action android:name="com.example.peopleconnect.CreateUserPage3" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.peopleconnect.MyAccount"
+            android:label="@string/title_activity_home_page" >
+            <intent-filter>
+                <action android:name="com.example.peopleconnect.MyAccount" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.peopleconnect.ChangePhone"
+            android:label="@string/title_activity_home_page" >
+            <intent-filter>
+                <action android:name="com.example.peopleconnect.ChangePhone" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.peopleconnect.ChangeAddress"
+            android:label="@string/title_activity_home_page" >
+            <intent-filter>
+                <action android:name="com.example.peopleconnect.ChangeAddress" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.peopleconnect.ChangePassword"
+            android:label="@string/title_activity_home_page" >
+            <intent-filter>
+                <action android:name="com.example.peopleconnect.ChangePassword" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.peopleconnect.LoginWithPassword"
+            android:label="@string/title_activity_home_page" >
+            <intent-filter>
+                <action android:name="com.example.peopleconnect.LoginWithPassword" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.peopleconnect.Support"
+            android:label="@string/title_activity_home_page" >
+            <intent-filter>
+                <action android:name="com.example.peopleconnect.Support" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.peopleconnect.MyComplaints"
+            android:label="@string/title_activity_home_page" >
+            <intent-filter>
+                <action android:name="com.example.peopleconnect.MyComplaints" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.peopleconnect.MyPublicQuestions"
+            android:label="@string/title_activity_home_page" >
+            <intent-filter>
+                <action android:name="com.example.peopleconnect.MyPublicQuestions" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.peopleconnect.MyPublicQuestionSingle"
+            android:label="@string/title_activity_home_page" >
+            <intent-filter>
+                <action android:name="com.example.peopleconnect.MyPublicQuestionSingle" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.peopleconnect.About"
+            android:label="@string/title_activity_home_page" >
+            <intent-filter>
+                <action android:name="com.example.peopleconnect.About" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".MessageReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.example.peopleconnect" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

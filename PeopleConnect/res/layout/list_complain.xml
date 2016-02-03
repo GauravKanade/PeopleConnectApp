@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:paddingBottom="10.0dip"
+    android:paddingLeft="10.0dip"
+    android:paddingRight="10.0dip"
+    android:paddingTop="3.0dip" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10.0dip" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvComplainHeadingList"
+                style="@style/ListHeading"
+                android:paddingTop="10.0dip"
+                android:text="This is the heading" />
+
+            <TextView
+                android:id="@+id/tvTimeComplainList"
+                style="@style/ListRightCornerTime"
+                android:text="09:00 pm" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvSenderComplainList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sender name" />
+
+        <TextView
+            android:id="@+id/tvAreaComplainList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Area"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

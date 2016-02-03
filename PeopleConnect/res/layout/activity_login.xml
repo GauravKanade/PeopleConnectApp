@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff6f6f6"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff227bad" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="10.0dip"
+            android:orientation="horizontal" >
+
+            <ImageView
+                style="@style/ImageIconPC"
+                android:src="@drawable/icon" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:text="Login"
+                android:textColor="#ffffffff"
+                android:textSize="18.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/llLoginPanel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7.0dip"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/etLoginName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:background="@drawable/edittext_layout"
+                    android:ems="10"
+                    android:fontFamily="verdena"
+                    android:hint="Email ID"
+                    android:inputType="textEmailAddress"
+                    android:padding="5.0dip"
+                    android:textSize="18.0sp" />
+
+                <EditText
+                    android:id="@+id/etPsswordForLogin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:background="@drawable/edittext_layout"
+                    android:ems="10"
+                    android:fontFamily="verdena"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:padding="5.0dip"
+                    android:textSize="18.0sp" />
+
+                <Button
+                    android:id="@+id/bLoginWithCredential"
+                    style="@style/HomePageTitles"
+                    android:layout_height="wrap_content"
+                    android:padding="5.0dip"
+                    android:paddingTop="20.0dip"
+                    android:text="Login" />
+
+                <TextView
+                    android:id="@+id/tvForgotPasswordAtLogin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30.0dip"
+                    android:gravity="center"
+                    android:text="Forgot Password??"
+                    android:textColor="#ff227bad"
+                    android:textSize="20.0sp" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</LinearLayout>

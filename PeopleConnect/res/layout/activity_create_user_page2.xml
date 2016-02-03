@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff6f6f6"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff227bad" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="10.0dip"
+            android:orientation="horizontal" >
+
+            <ImageView
+                style="@style/ImageIconPC"
+                android:src="@drawable/icon" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:text="Create User Account "
+                android:textColor="#ffffffff"
+                android:textSize="18.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5.0dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50.0dip"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/Info"
+                android:text="Please enter the name, phone number and Email ID:" />
+
+            <EditText
+                android:id="@+id/etUserName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/edittext_layout"
+                android:fontFamily="verdena"
+                android:hint="Full Name*"
+                android:padding="5.0dip"
+                android:textSize="18.0sp" />
+
+            <EditText
+                android:id="@+id/etUserPhone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30.0dip"
+                android:background="@drawable/edittext_layout"
+                android:fontFamily="verdena"
+                android:hint="Phone Number*"
+                android:inputType="phone"
+                android:padding="5.0dip"
+                android:textSize="18.0sp" />
+
+            <EditText
+                android:id="@+id/etUserEmail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30.0dip"
+                android:background="@drawable/edittext_layout"
+                android:ems="10"
+                android:fontFamily="verdena"
+                android:hint="Email ID*"
+                android:inputType="textEmailAddress"
+                android:padding="5.0dip"
+                android:textSize="18.0sp" />
+
+            <EditText
+                android:id="@+id/etUserPassword"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30.0dip"
+                android:background="@drawable/edittext_layout"
+                android:ems="10"
+                android:fontFamily="verdena"
+                android:hint="Password*"
+                android:inputType="textPassword"
+                android:padding="5.0dip"
+                android:textSize="18.0sp" />
+
+            <EditText
+                android:id="@+id/etUserRePassword"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20.0dip"
+                android:layout_marginTop="30.0dip"
+                android:background="@drawable/edittext_layout"
+                android:ems="10"
+                android:fontFamily="verdena"
+                android:hint="Re-Enter Password*"
+                android:inputType="textPassword"
+                android:padding="5.0dip"
+                android:textSize="18.0sp" />
+
+            <TextView
+                style="@style/Info"
+                android:text="Please select the State, City and Area of your residence" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:text="State"
+                android:textSize="15.0sp" />
+
+            <Spinner
+                android:id="@+id/spStates"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:padding="5.0dip" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:text="City"
+                android:textSize="15.0sp" />
+
+            <Spinner
+                android:id="@+id/spCity"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:padding="5.0dip" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:text="Area"
+                android:textSize="15.0sp" />
+
+            <Spinner
+                android:id="@+id/spArea"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:padding="5.0dip" />
+
+            <EditText
+                android:id="@+id/etPincode"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20.0dip"
+                android:layout_marginTop="30.0dip"
+                android:background="@drawable/edittext_layout"
+                android:ems="10"
+                android:fontFamily="verdena"
+                android:hint="Pincode"
+                android:inputType="number"
+                android:padding="5.0dip"
+                android:textSize="18.0sp" />
+
+            <Button
+                android:id="@+id/bCreateUserToPage3"
+                style="@style/HomePageTitles"
+                android:layout_height="wrap_content"
+                android:padding="5.0dip"
+                android:paddingTop="40.0dip"
+                android:text="Create Account" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

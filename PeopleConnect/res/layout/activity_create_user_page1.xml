@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ff227bad" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="10.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="10.0dip"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    style="@style/ImageIconPC"
+                    android:src="@drawable/icon" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:text="Create User Account"
+                    android:textColor="#ffffffff"
+                    android:textSize="18.0dip" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            style="@style/Info"
+            android:text="Welcome to People Connect. This is a community Application that allows you to post any complaints to the authorities that are capabale of taking actions. By using this app, you can post complaints electronically and also help in green computing.\n \n\n People Connect is also useful in public opinions, a medium by which we can obtain the opinion of the mass by posting a question with pre-defined options to a particular area." />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/bAlreadyHaveAccount"
+            style="@style/HomePageTitles"
+            android:layout_height="wrap_content"
+            android:padding="5.0dip"
+            android:paddingTop="40.0dip"
+            android:text="Already Have an Account" />
+
+        <Button
+            android:id="@+id/bCreateUserToPage2"
+            style="@style/HomePageTitles"
+            android:layout_height="wrap_content"
+            android:padding="5.0dip"
+            android:paddingTop="20.0dip"
+            android:text="Create Account" />
+    </LinearLayout>
+
+</RelativeLayout>

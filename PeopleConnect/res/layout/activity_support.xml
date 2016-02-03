@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="#fff6f6f6"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff227bad" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="10.0dip"
+            android:orientation="horizontal" >
+
+            <ImageView
+                style="@style/ImageIconPC"
+                android:src="@drawable/icon" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:text="Support"
+                android:textColor="#ffffffff"
+                android:textSize="18.0sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        style="@style/Info"
+        android:text="In case of any bugs or errors, please report the same to the PeopleConnect admin via email. Enter the following details" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7.0dip"
+        android:layout_marginTop="7.0dip"
+        android:text="Type of message" />
+
+    <Spinner
+        android:id="@+id/spTypeOfMessage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7.0dip"
+        android:background="@drawable/edittext_layout" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7.0sp"
+        android:layout_marginTop="7.0dip"
+        android:text="Choose domain" />
+
+    <Spinner
+        android:id="@+id/spSubject"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7.0dip"
+        android:background="@drawable/edittext_layout" />
+
+    <EditText
+        android:id="@+id/etSupportDescription"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7.0dip"
+        android:background="@drawable/edittext_layout"
+        android:gravity="top"
+        android:hint="Description"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:padding="7.0dip" />
+
+    <Button
+        android:id="@+id/bSendSupportMessage"
+        style="@style/HomePageTitles"
+        android:layout_height="wrap_content"
+        android:padding="5.0dip"
+        android:text="Send Message" />
+
+</LinearLayout>

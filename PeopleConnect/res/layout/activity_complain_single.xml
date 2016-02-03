@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#fff6f6f6"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff227bad" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="10.0dip"
+            android:orientation="horizontal" >
+
+            <ImageView
+                style="@style/ImageIconPC"
+                android:src="@drawable/icon" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:text="Complaints"
+                android:textColor="#ffffffff"
+                android:textSize="18.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3.0dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_layout"
+                android:padding="5.0dip" >
+
+                <TextView
+                    android:id="@+id/tvComplaintID_ComplainSingle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:id="@+id/tvStatus_ComplainSingle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textSize="16.0sp" />
+            </RelativeLayout>
+
+            <com.loopj.android.image.SmartImageView
+                android:id="@+id/my_image"
+                android:layout_width="fill_parent"
+                android:layout_height="300.0sp"
+                android:layout_margin="10.0dip" />
+
+            <TextView
+                android:id="@+id/tvHeading_ComplainSingle"
+                style="@style/ItemHeading"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/tvDescription_ComplaintSingle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:layout_marginLeft="3.0dip"
+                android:background="@drawable/textview_layout"
+                android:orientation="vertical"
+                android:padding="5.0dip" >
+
+                <TextView
+                    android:id="@+id/tvSenderName_ComplainSingle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2.0dip"
+                    android:textSize="20.0sp" />
+
+                <TextView
+                    android:id="@+id/tvArea_ComplainSingle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2.0dip" />
+
+                <TextView
+                    android:id="@+id/tvTime_ComplainSingle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2.0dip" />
+
+                <TextView
+                    android:id="@+id/tvCategory_ComplainSingle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2.0dip" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/ItemHeading"
+                android:gravity="center"
+                android:text="Actions Taken" />
+
+            <LinearLayout
+                android:id="@+id/llActionsComplaintSingles"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5.0dip"
+                android:background="@drawable/edittext_layout"
+                android:orientation="vertical" />
+
+            <TextView
+                style="@style/ItemHeading"
+                android:gravity="center"
+                android:text="Comments" />
+
+            <LinearLayout
+                android:id="@+id/llCommentContainer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/etCommentDescriptionComplaintSingle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dip"
+                    android:background="@drawable/edittext_layout"
+                    android:fontFamily="verdena"
+                    android:gravity="top"
+                    android:hint="Leave a Reply"
+                    android:inputType="textMultiLine"
+                    android:lines="5"
+                    android:padding="5.0dip"
+                    android:textSize="18.0sp" />
+
+                <Button
+                    android:id="@+id/bPostComment_ComplaintSingle"
+                    style="@style/HomePageTitles"
+                    android:padding="5.0dip"
+                    android:text="Post My Comment" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
